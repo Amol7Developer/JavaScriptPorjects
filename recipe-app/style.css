@@ -157,3 +157,21 @@ header button{
 .meal-body .fav-btn.active {
     color: rebeccapurple;
 }
+
+.meal-info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: "cenert";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+
+.meal-info {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+}
