@@ -71,8 +71,9 @@ function addMeal(mealData, random = false){
         
         }
 
-        //clean the container
-   
+        // //clean the container
+        // favoriteContainer.innerHTML = '';
+        fetchFavMeals();
 
     });
 
@@ -119,7 +120,7 @@ async function fetchFavMeals(){
 }
 
 function addMealFav(mealData){
-   
+
     const favMeal = document.createElement("li");
 
     favMeal.innerHTML = `
@@ -159,4 +160,4 @@ searchBtn.addEventListener('click', async () =>{
     
     }
 
-});
+}); 

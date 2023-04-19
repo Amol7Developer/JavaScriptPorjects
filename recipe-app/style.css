@@ -105,7 +105,10 @@ header button{
     overflow: hidden;
     text-overflow: ellipsis;
     width: 75px;
+   
 }
+
+
 
 .meal {
     border-radius: 3px;
