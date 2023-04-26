@@ -10,11 +10,37 @@ body{
     margin: 0;
 }
 
+header{
+    background-color: rgb(7, 9, 100);
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+header input{
+    background-color: transparent;
+    border: 2px solid rgb(99, 101, 239);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+header input::placeholder {
+    color: rgb(101, 101, 252);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .movie {
-    background-color: rgb(82, 85, 255);
+    background-color: rgb(7, 9, 100);
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    margin: 2rem;
+    overflow: hidden;
+    margin: 1rem;
     width: 300px;
 }
 
@@ -25,9 +51,10 @@ body{
 .movie-info {
     color: #eee;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .movie-info h3 {
@@ -35,7 +62,18 @@ body{
 }
 
 .movie-info span{
-    background-color: #22254b;
+    background-color: #0513da;
     border-radius: 3px;
+    font-weight: bold;
     padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green{
+    color: rgb(39,189,39);
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
 }
