@@ -17,17 +17,23 @@ header{
     padding: 1rem;
 }
 
-header input{
+.search {
     background-color: transparent;
     border: 2px solid rgb(99, 101, 239);
     border-radius: 50px;
+    color: white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-family: inherit;
 }
 
-header input::placeholder {
+.search::placeholder {
     color: rgb(101, 101, 252);
+}
+
+.search:focus{
+    background-color: #22254b;
+    outline: none;
 }
 
 main {
@@ -40,6 +46,7 @@ main {
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    position: relative;
     margin: 1rem;
     width: 300px;
 }
@@ -62,7 +69,7 @@ main {
 }
 
 .movie-info span{
-    background-color: #0513da;
+    background-color: #1b4c6d;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
@@ -76,4 +83,25 @@ main {
 }
 .movie-info span.red{
     color: red;
+}
+
+.overview {
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom:0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h4 {
+    margin-top: 0;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
 }
