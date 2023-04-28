@@ -60,13 +60,14 @@ function addReposToCard(repos){
         .forEach.((repo) =>{
         const repoEl = document.createElement("a");
         repoEl.classList.add("repo");
-
+        
         repoEl.href = repo.html_url;
         repoEl.target = "_blank";
         repoEl.innerText = repo.name;
 
         reposEl.appendChild(repoEl);
     });
+    
 }
 
 form.addEventListener("submit", (e) =>{
